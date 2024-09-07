@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.omlink.manager.mapper.OrderMapper">
+
+    <resultMap id="orderMap" type="com.cola.omlink.repository.entity.order.Order" autoMapping="true"></resultMap>
+
+
+<!--    TODO-->
+    <sql id="columns">
+        id,order_no,project_id,customer_id,customer_name,original_price,total_price,status,cancel_time,deleted,
+        create_time,update_time
+    </sql>
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+     insert into o_order (id,
+                          order_no,
+                          project_id,
+                          customer_id,
+                          customer_name,
+                          original_price,
+                          total_price,
+                          status
+                          ) values (
+                          #{id},
+                          #{orderNo},
+                          #{projectId},
+                          #{customerId},
+                          #{customerName},
+                          #{originalPrice},
+                          #{totalPrice},
+                          #{status}
+                          )
+    </insert>
+
+</mapper>
