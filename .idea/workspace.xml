@@ -5,81 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="User Login and submit order">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/annotation/EnableUserLoginAuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/config/Knife4jConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/config/UserWebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/exception/OmException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/interceptor/UserLoginAuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/common-util/src/main/java/com/cola/omlink/utils/AuthContextUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/ManagerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/ServiceAutoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/constant/RedisConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/PostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/util/sendAuthCodeEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/client_secret_634593237779-vnrai1qam01mo06ckvrbmnlfth6cqquo.apps.googleusercontent.com.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/order/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/post/PostMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/user/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-manager/src/test/java/functionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/h5/UserLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/h5/UserRegisterDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/order/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/ArticleDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/ArticleTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/ReadCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/base/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/gift/Gift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/gift/GiftDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/system/NotifyMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/system/RequestCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserFoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/System/LoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/common/ResultCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/h5/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/client_secret_634593237779-vnrai1qam01mo06ckvrbmnlfth6cqquo.apps.googleusercontent.com.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +22,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -109,24 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/spproject/omlink/om-common/common-service/src/main/java/com/cola/omlink/common/exception",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "4bdcc81704d119ff6f8d572300dff6de",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/spproject/omlink/om-common/common-service/src/main/java/com/cola/omlink/common/exception&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4bdcc81704d119ff6f8d572300dff6de&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -224,8 +155,16 @@
       <workItem from="1725505118845" duration="7128000" />
       <workItem from="1725532410433" duration="9519000" />
       <workItem from="1725593461599" duration="5848000" />
-      <workItem from="1725687463996" duration="11784000" />
+      <workItem from="1725687463996" duration="12087000" />
     </task>
+    <task id="LOCAL-00001" summary="User Login and submit order">
+      <created>1725710663947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725710663947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
