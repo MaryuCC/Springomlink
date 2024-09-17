@@ -90,13 +90,13 @@ public class UserInfoServiceImpl implements UserInfoService {
         String userName = userRegisterDto.getUserName();
         String password = userRegisterDto.getPassword();
         String nickName = userRegisterDto.getNickName();
-        //String code = userRegisterDto.getCode();
+        String code = userRegisterDto.getCode();
 
-        /*
+
         // 2 验证码校验
         if(!isValidate(userName,code)){
             throw new OmException(ResultCodeEnum.VALIDATECODE_ERROR);
-        }*/
+        }
         // 3 校验用户名不能重复
 
         User user = userMapper.selectByUsername(userName);
@@ -113,7 +113,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         userMapper.save(user);
 
         // 5 从redis中删除发送的验证码
-        //redisTemplate.delete(userName);
+        redisTemplate.delete(userName);
 
     }
 

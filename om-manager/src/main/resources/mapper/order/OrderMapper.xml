@@ -7,7 +7,7 @@
     <resultMap id="orderMap" type="com.cola.omlink.repository.entity.order.Order" autoMapping="true"></resultMap>
 
 
-<!--    TODO-->
+
     <sql id="columns">
         id,order_no,project_id,customer_id,customer_name,original_price,total_price,status,cancel_time,deleted,
         create_time,update_time
@@ -33,5 +33,42 @@
                           #{status}
                           )
     </insert>
+    
+    <!--    根据userId 和 订单状态查询-->
+    <select id="findUserPage" resultMap="orderMap">
+        select <include refid="columns" />
+            from o_order
+            <where>
+                <if test="orderStatus != null">
+                    and status = #{orderStatus}
+                </if>
+                and customer_id = #{userId}
+                and deleted = 0
+            </where>
+            order by id desc
+    </select>
+
+
+
+    <!--    根据orderId更新订单状态-->
+    <update id="missionComplete">
+        update o_order
+        set status = 1
+        where id=#{orderId};
+    </update>
+
+    <update id="completeOrder">
+        update o_order
+        set status = 2
+        where id=#{orderId};
+    </update>
+
+    <update id="cancelOrder">
+        update o_order
+        set status = 3,
+            cancel_time = now()
+        where id=#{orderId};
+    </update>
+    
 
 </mapper>

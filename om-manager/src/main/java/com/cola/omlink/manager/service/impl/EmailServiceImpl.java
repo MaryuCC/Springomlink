@@ -5,13 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.concurrent.TimeUnit;
 
 import static com.cola.omlink.manager.constant.RedisConstant.Email_Pre;
-import static com.cola.omlink.manager.util.sendAuthCodeEmail.sendAuthCodeEmail;
 
 
 @Slf4j
@@ -20,6 +21,9 @@ public class EmailServiceImpl implements EmailService {
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
+
+    @Autowired
+    private JavaMailSender mailSender;
 
     @Override
     public void sendValidateCode(String email) {
@@ -39,4 +43,19 @@ public class EmailServiceImpl implements EmailService {
         // send validate code
         sendAuthCodeEmail(email, validateCode);
     }
+
+    private void sendAuthCodeEmail(String email, String validateCode) {
+        // 创建一个简单的邮件对象
+        SimpleMailMessage message = new SimpleMailMessage();
+
+        // 发件人和收件人等信息
+        message.setFrom("omlink@foxmail.com");
+        message.setTo(email);                         // 收件人
+        message.setSubject("Verification Code");               // 主题
+        message.setText("Your verification code is: " + validateCode);                     // 内容
+
+        // 发送邮件
+        mailSender.send(message);
+    }
+
 }

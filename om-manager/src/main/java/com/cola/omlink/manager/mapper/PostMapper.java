@@ -12,6 +12,6 @@ public interface PostMapper {
 
     Article findPostById(@Param("id") Long id);
 
-    List<Article> findPostsSortedByTag(@Param("type") Integer type);
+    List<Article> findPostsByTag(@Param("type") Integer type);
 
 }

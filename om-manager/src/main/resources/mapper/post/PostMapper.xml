@@ -5,15 +5,24 @@
 <mapper namespace="com.cola.omlink.manager.mapper.PostMapper">
 
     <select id="findPostsByType" resultType="com.cola.omlink.repository.entity.article.Article">
-        SELECT * FROM o_article WHERE article_type = #{type}
+        SELECT *
+        FROM o_article
+        WHERE article_type = #{type}
+            and deleted = 0
     </select>
 
     <select id="findPostById" resultType="com.cola.omlink.repository.entity.article.Article">
-        SELECT * FROM o_article WHERE id = #{id}
+        SELECT *
+        FROM o_article
+        WHERE id = #{id}
+          and deleted = 0
     </select>
 
-    <select id="findPostsSortedByTag" resultType="com.cola.omlink.repository.entity.article.Article">
-        SELECT * FROM o_article WHERE article_type = #{type} ORDER BY tag
+    <select id="findPostsByTag" resultType="com.cola.omlink.repository.entity.article.Article">
+        SELECT *
+        FROM o_article
+        WHERE article_type = #{type}
+        ORDER BY tag
     </select>
 
 </mapper>

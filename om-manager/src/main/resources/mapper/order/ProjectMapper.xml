@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.omlink.manager.mapper.ProjectMapper">
+
+    <resultMap id="projectMap" type="com.cola.omlink.repository.entity.product.Project" autoMapping="true"></resultMap>
+
+
+    <sql id="columns">
+        id,host_id,project_name,project_address,project_price,deleted,create_time,update_time
+    </sql>
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        insert into o_project (id,
+                             host_id,
+                             project_name,
+                             project_address,
+                             project_price,
+        ) values (
+                     #{id},
+                     #{hostId},
+                     #{projectName},
+                     #{projectAddress},
+                     #{projectPrice}
+                 )
+    </insert>
+
+    <insert id="saveDetail" useGeneratedKeys="true" keyProperty="id">
+        insert into o_project_detail (id,
+                                    project_id,
+                                    content
+        ) values (
+                  #{id},
+                  #{projectId},
+                  #{content}
+                )
+    </insert>
+
+    <select id="findProjectPage" resultMap="projectMap">
+        select <include refid="columns" />
+            from o_project
+            where deleted=0
+    </select>
+
+    <update id="update">
+        update o_project
+            set project_name=#{projectName},
+                project_price=#{projectPrice},
+                project_address=#{projectAddress}
+            where id=#{projectId}
+    </update>
+
+    <update id="updateDetail">
+        update o_project_detail
+            set content=#{content}
+                where project_id = #{projectId}
+    </update>
+
+    <update id="delete">
+        update o_project as P, o_project_detail as D
+            set P.deleted = 1,
+                D.deleted = 1
+            where P.id=D.project_id and P.id=#{projectId}
+    </update>
+
+
+
+
+</mapper>

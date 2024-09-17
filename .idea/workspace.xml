@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="User Login and submit order">
+      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/ProjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/order/ProjectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/product/ProjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/product/ProjectDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/Project/ProjectVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/client_secret_634593237779-vnrai1qam01mo06ckvrbmnlfth6cqquo.apps.googleusercontent.com.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-common/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/om-common/common-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/config/UserWebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/config/UserWebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/interceptor/UserLoginAuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-common/common-service/src/main/java/com/cola/omlink/common/interceptor/UserLoginAuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/PostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/EmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/util/sendAuthCodeEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/order/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/order/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/post/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/post/PostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/test/java/functionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/test/java/functionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/order/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/order/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/article/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/product/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/common/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/common/ResultCodeEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -74,12 +103,13 @@
       <recent name="E:\spproject\omlink\om-manager\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.functionTest.testLogin">
-    <configuration name="functionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.functionTest.testOrder">
+    <configuration name="functionTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="om-manager" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="functionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,11 +124,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="functionTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="functionTest.testOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="om-manager" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="functionTest" />
-      <option name="METHOD_NAME" value="testRegister" />
+      <option name="METHOD_NAME" value="testOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.functionTest.testLogin" />
-        <item itemvalue="JUnit.functionTest.testRegister" />
-        <item itemvalue="JUnit.functionTest" />
+        <item itemvalue="JUnit.functionTest.testOrder" />
+        <item itemvalue="JUnit.functionTest.testDelete" />
         <item itemvalue="JUnit.functionTest.testSendCode" />
         <item itemvalue="Spring Boot.ManagerApplication" />
+        <item itemvalue="JUnit.functionTest.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +186,14 @@
       <workItem from="1725532410433" duration="9519000" />
       <workItem from="1725593461599" duration="5848000" />
       <workItem from="1725687463996" duration="12087000" />
+      <workItem from="1725711010943" duration="4638000" />
+      <workItem from="1725769146161" duration="11139000" />
+      <workItem from="1725946783992" duration="3861000" />
+      <workItem from="1726122091382" duration="1732000" />
+      <workItem from="1726138210457" duration="636000" />
+      <workItem from="1726305591893" duration="8569000" />
+      <workItem from="1726391934757" duration="3350000" />
+      <workItem from="1726547465352" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="User Login and submit order">
       <created>1725710663947</created>
@@ -164,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1725710663947</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User Login and submit order">
+      <created>1725711046659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725711046659</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,8 +246,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/util/sendAuthCodeEmail.java</url>
-          <line>70</line>
+          <url>file://$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/OrderServiceImpl.java</url>
+          <line>37</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

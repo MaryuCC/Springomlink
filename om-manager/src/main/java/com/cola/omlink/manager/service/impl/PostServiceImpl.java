@@ -1,6 +1,5 @@
 package com.cola.omlink.manager.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cola.omlink.manager.service.PostService;
 import com.cola.omlink.repository.entity.article.Article;
 import com.cola.omlink.manager.mapper.PostMapper;
@@ -29,7 +28,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<Article> getPostsSortedByTag(Integer type) {
-        return postMapper.findPostsSortedByTag(type);
+        return postMapper.findPostsByTag(type);
     }
 
 }

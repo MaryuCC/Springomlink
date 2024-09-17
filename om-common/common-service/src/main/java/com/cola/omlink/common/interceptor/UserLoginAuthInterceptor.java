@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
-import static com.cola.omlink.manager.constant.RedisConstant.Login_Token_Pre;
+
 
 public class UserLoginAuthInterceptor implements HandlerInterceptor {
 
@@ -20,7 +20,7 @@ public class UserLoginAuthInterceptor implements HandlerInterceptor {
                              HttpServletResponse response,
                              Object handler) throws Exception {
         String token = request.getHeader("token");
-        String userJson = redisTemplate.opsForValue().get(Login_Token_Pre + token);
+        String userJson = redisTemplate.opsForValue().get("user:login" + token);
         AuthContextUtil.setUserInfo(JSON.parseObject(userJson, User.class));
 
         return HandlerInterceptor.super.preHandle(request, response, handler);
