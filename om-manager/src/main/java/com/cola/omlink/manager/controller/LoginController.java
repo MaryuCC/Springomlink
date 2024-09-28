@@ -34,6 +34,7 @@ public class LoginController {
 
 
     // user register
+    //TODO user table add email
     @PostMapping("register")
     public Result register(@RequestBody UserRegisterDto userRegisterDto){
         userInfoService.register(userRegisterDto);

@@ -56,7 +56,10 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public String login(UserLoginDto userLoginDto) {
         // 1. Dto获取用户名和密码
-        String userName = userLoginDto.getUserName();
+        //String userName = userLoginDto.getUserName();
+        //TODO because DB no email, but frontend pass email, need change logic
+        String userName = userLoginDto.getEmail();
+
         String password = userLoginDto.getPassword();
 
         // 2. 根据用户名查询数据库，得到用户信息
