@@ -15,7 +15,7 @@ public class UserWebMvcConfiguration implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(userLoginAuthInterceptor)
-                .addPathPatterns("api/user/userInfo/**")
+                .addPathPatterns("/api/user/userInfo/**")
                 .addPathPatterns("/api/order/**")
                 .addPathPatterns("/api/dashboard/**")
                 .addPathPatterns("/api/project/**");
