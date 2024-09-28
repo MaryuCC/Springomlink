@@ -91,10 +91,11 @@ public class UserInfoServiceImpl implements UserInfoService {
         String password = userRegisterDto.getPassword();
         String nickName = userRegisterDto.getNickName();
         String code = userRegisterDto.getCode();
+        String email = userRegisterDto.getEmail().toLowerCase();
 
 
         // 2 验证码校验
-        if(!isValidate(userName,code)){
+        if(!isValidate(email,code)){
             throw new OmException(ResultCodeEnum.VALIDATECODE_ERROR);
         }
         // 3 校验用户名不能重复
@@ -119,12 +120,12 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 
     //验证码校验
-    private boolean isValidate(String userName, String code){
+    private boolean isValidate(String email, String code){
         // 2，1 从redis获取发送验证码
-        String redisCode = redisTemplate.opsForValue().get(Email_Pre + userName);
+        String redisCode = redisTemplate.opsForValue().get(Email_Pre + email);
 
         // 2.2 获取输入的验证码，进行比对
-        if(redisCode.equals(code)){
+        if(!redisCode.equals(code)){
             return false;
         }
         return true;

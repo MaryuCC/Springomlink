@@ -38,7 +38,7 @@ public class EmailServiceImpl implements EmailService {
         log.info(validateCode);
 
         // put validate code into redis with 5 mins time limit
-        redisTemplate.opsForValue().set(Email_Pre + email, validateCode, 5, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set(Email_Pre + email.toLowerCase(), validateCode, 5, TimeUnit.MINUTES);
 
         // send validate code
         sendAuthCodeEmail(email, validateCode);
