@@ -4,6 +4,7 @@ import static com.cola.omlink.manager.constant.RoleConstant.ROLE_PREFIX;
 
 import com.alibaba.fastjson.JSON;
 import com.cola.omlink.repository.entity.user.User;
+import com.cola.omlink.repository.vo.common.RolesEnum;
 import java.util.Collections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

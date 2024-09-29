@@ -1,4 +1,4 @@
-package com.cola.omlink.manager.config.auth;
+package com.cola.omlink.repository.vo.common;
 
 import lombok.Getter;
 
