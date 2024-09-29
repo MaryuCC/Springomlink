@@ -3,12 +3,15 @@ package com.cola.omlink.manager.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.cola.omlink.common.exception.OmException;
+import com.cola.omlink.manager.mapper.UserInfoMapper;
 import com.cola.omlink.manager.mapper.UserMapper;
 import com.cola.omlink.manager.service.UserInfoService;
 import com.cola.omlink.repository.dto.h5.UserLoginDto;
 import com.cola.omlink.repository.dto.h5.UserRegisterDto;
 import com.cola.omlink.repository.entity.user.User;
+import com.cola.omlink.repository.entity.user.UserInfo;
 import com.cola.omlink.repository.vo.common.ResultCodeEnum;
+import com.cola.omlink.repository.vo.common.RolesEnum;
 import com.cola.omlink.repository.vo.h5.UserVo;
 import com.cola.omlink.utils.AuthContextUtil;
 import org.springframework.beans.BeanUtils;
@@ -29,6 +32,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    UserInfoMapper userInfoMapper;
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
@@ -118,6 +123,16 @@ public class UserInfoServiceImpl implements UserInfoService {
         // 5 从redis中删除发送的验证码
         redisTemplate.delete(userName);
 
+    }
+
+    @Override
+    public RolesEnum getUserRoleByUserId(Long userId){
+        UserInfo userInfo = userInfoMapper.selectByUserId(userId);
+        if(userInfo != null && userInfo.getUserRole() != null) {
+            return RolesEnum.fromValue(userInfo.getUserRole());
+        }else {
+            return RolesEnum.USER;
+        }
     }
 
 

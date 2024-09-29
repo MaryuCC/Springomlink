@@ -12,4 +12,13 @@ public enum RolesEnum {
     RolesEnum(int code) {
         this.code = code;
     }
+
+    public static RolesEnum fromValue(int code) {
+        for (RolesEnum role : RolesEnum.values()) {
+            if (role.getCode() == code) {
+                return role;
+            }
+        }
+        return RolesEnum.USER;
+    }
 }

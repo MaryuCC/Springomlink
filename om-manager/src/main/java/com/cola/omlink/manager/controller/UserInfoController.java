@@ -1,7 +1,8 @@
 package com.cola.omlink.manager.controller;
 
+import static com.cola.omlink.utils.ExtractHeaderUtil.extractToken;
+
 import com.cola.omlink.manager.service.UserInfoService;
-import com.cola.omlink.repository.dto.h5.UserRegisterDto;
 import com.cola.omlink.repository.vo.common.Result;
 import com.cola.omlink.repository.vo.common.ResultCodeEnum;
 import com.cola.omlink.repository.vo.h5.UserVo;
@@ -22,7 +23,7 @@ public class UserInfoController {
     // get current user info
     @GetMapping("auth/getCurrentUserInfo")
     public Result getCurrentUserInfo(HttpServletRequest request){
-        String token = request.getHeader("token");
+        String token = extractToken(request);
         UserVo userVo = userInfoService.getCurrentUserInfo(token);
         return Result.build(userVo,ResultCodeEnum.SUCCESS);
     }
