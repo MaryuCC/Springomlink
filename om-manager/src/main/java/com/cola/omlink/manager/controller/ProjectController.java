@@ -10,6 +10,7 @@ import com.cola.omlink.repository.vo.common.ResultCodeEnum;
 import com.cola.omlink.utils.AuthContextUtil;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -21,7 +22,8 @@ public class ProjectController {
 
     // 发布项目
     @PostMapping("auth/createProject")
-    public Result createProject(@PathVariable ProjectDto projectDto){
+    @PreAuthorize("hasRole('ADMIN')")
+    public Result createProject(@RequestBody ProjectDto projectDto){
         projectService.createProject(projectDto);
         return Result.build(null, ResultCodeEnum.SUCCESS);
     }

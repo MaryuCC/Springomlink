@@ -34,8 +34,9 @@ public class LoginController {
 
 
     // user register
+    //TODO user table add email
     @PostMapping("register")
-    public Result register(@PathVariable UserRegisterDto userRegisterDto){
+    public Result register(@RequestBody UserRegisterDto userRegisterDto){
         userInfoService.register(userRegisterDto);
         return Result.build(null, ResultCodeEnum.SUCCESS);
     }

@@ -3,12 +3,15 @@ package com.cola.omlink.manager.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.cola.omlink.common.exception.OmException;
+import com.cola.omlink.manager.mapper.UserInfoMapper;
 import com.cola.omlink.manager.mapper.UserMapper;
 import com.cola.omlink.manager.service.UserInfoService;
 import com.cola.omlink.repository.dto.h5.UserLoginDto;
 import com.cola.omlink.repository.dto.h5.UserRegisterDto;
 import com.cola.omlink.repository.entity.user.User;
+import com.cola.omlink.repository.entity.user.UserInfo;
 import com.cola.omlink.repository.vo.common.ResultCodeEnum;
+import com.cola.omlink.repository.vo.common.RolesEnum;
 import com.cola.omlink.repository.vo.h5.UserVo;
 import com.cola.omlink.utils.AuthContextUtil;
 import org.springframework.beans.BeanUtils;
@@ -16,7 +19,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
-import org.springframework.util.StringUtils;
 
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
@@ -30,6 +32,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    UserInfoMapper userInfoMapper;
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
@@ -57,7 +61,10 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public String login(UserLoginDto userLoginDto) {
         // 1. Dto获取用户名和密码
-        String userName = userLoginDto.getUserName();
+        //String userName = userLoginDto.getUserName();
+        //TODO because DB no email, but frontend pass email, need change logic
+        String userName = userLoginDto.getEmail();
+
         String password = userLoginDto.getPassword();
 
         // 2. 根据用户名查询数据库，得到用户信息
@@ -91,10 +98,11 @@ public class UserInfoServiceImpl implements UserInfoService {
         String password = userRegisterDto.getPassword();
         String nickName = userRegisterDto.getNickName();
         String code = userRegisterDto.getCode();
+        String email = userRegisterDto.getEmail().toLowerCase();
 
 
         // 2 验证码校验
-        if(!isValidate(userName,code)){
+        if(!isValidate(email,code)){
             throw new OmException(ResultCodeEnum.VALIDATECODE_ERROR);
         }
         // 3 校验用户名不能重复
@@ -117,14 +125,24 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     }
 
+    @Override
+    public RolesEnum getUserRoleByUserId(Long userId){
+        UserInfo userInfo = userInfoMapper.selectByUserId(userId);
+        if(userInfo != null && userInfo.getUserRole() != null) {
+            return RolesEnum.fromValue(userInfo.getUserRole());
+        }else {
+            return RolesEnum.USER;
+        }
+    }
+
 
     //验证码校验
-    private boolean isValidate(String userName, String code){
+    private boolean isValidate(String email, String code){
         // 2，1 从redis获取发送验证码
-        String redisCode = redisTemplate.opsForValue().get(Email_Pre + userName);
+        String redisCode = redisTemplate.opsForValue().get(Email_Pre + email);
 
         // 2.2 获取输入的验证码，进行比对
-        if(redisCode.equals(code)){
+        if(!redisCode.equals(code)){
             return false;
         }
         return true;

@@ -13,4 +13,6 @@ public class UserRegisterDto {
 
     private String code;
 
+    private String email;
+
 }
