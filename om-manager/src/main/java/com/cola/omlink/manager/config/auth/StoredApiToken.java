@@ -1,5 +1,7 @@
 package com.cola.omlink.manager.config.auth;
 
+import static com.cola.omlink.manager.constant.RoleConstant.ROLE_PREFIX;
+
 import com.alibaba.fastjson.JSON;
 import com.cola.omlink.repository.entity.user.User;
 import java.util.Collections;
@@ -20,8 +22,8 @@ public class StoredApiToken {
             User user = JSON.parseObject(userJson, User.class);
             String name = user.getUserName();
             Long userId = user.getId();
-            //TODO("get user role by id")
-            String userRole = RolesEnum.USER.name();
+            //TODO("get user role by id, default USER")
+            String userRole = ROLE_PREFIX + RolesEnum.USER.name();
 
             return new UsernamePasswordAuthenticationToken(
                 name,
@@ -29,7 +31,6 @@ public class StoredApiToken {
                 Collections.singletonList(new SimpleGrantedAuthority(userRole))
             );
         } catch (Exception e) {
-            // Token validation failed
             return null;
         }
     }
