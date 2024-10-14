@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:fix register logic and merge issue" />
+    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:specify pom package settings">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/BearerTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/BearerTokenFilter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +65,7 @@
     "WebServerToolWindowPanel.toolwindow.show.date": "false",
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "com.google.cloudcode.ide_session_index": "20241014_0000",
+    "com.google.cloudcode.ide_session_index": "20241014_0002",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/Yohane/.ssh/id_rsa",
     "node.js.detected.package.eslint": "true",
@@ -94,7 +97,7 @@
       <recent name="E:\spproject\omlink\om-manager\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.functionTest.testRegister">
+  <component name="RunManager" selected="Spring Boot.ManagerApplication">
     <configuration name="Deploy" type="CloudCodeCloudRunConfigurationType" factoryName="CloudCodeCloudDeployRunConfigurationFactory" show_console_on_std_err="false" show_console_on_std_out="false" gcpProject="{&quot;googleUsername&quot;:&quot;teamdatacola@gmail.com&quot;,&quot;projectId&quot;:&quot;omlink-436204&quot;,&quot;projectName&quot;:&quot;omlink&quot;,&quot;projectNumber&quot;:1067344842079}" imageBuilder="{&quot;name&quot;:&quot;Buildpacks&quot;,&quot;payload&quot;:{&quot;path&quot;:&quot;pom.xml&quot;,&quot;builder&quot;:&quot;gcr.io/buildpacks/builder:v1&quot;}}" gcbSettings="{}">
       <option name="allowRunningInParallel" value="false" />
       <option name="buildEnvironment" value="Local" />
@@ -194,9 +197,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ManagerApplication" />
         <item itemvalue="JUnit.functionTest.testRegister" />
         <item itemvalue="JUnit.functionTest.testSendCode" />
-        <item itemvalue="Spring Boot.ManagerApplication" />
         <item itemvalue="JUnit.functionTest.testOrder" />
         <item itemvalue="JUnit.functionTest.testLogin" />
       </list>
@@ -256,7 +259,8 @@
       <workItem from="1728462302227" duration="3732000" />
       <workItem from="1728711847417" duration="977000" />
       <workItem from="1728806362147" duration="597000" />
-      <workItem from="1728876306218" duration="3562000" />
+      <workItem from="1728876306218" duration="4462000" />
+      <workItem from="1728882902637" duration="1236000" />
     </task>
     <task id="LOCAL-00001" summary="User Login and submit order">
       <created>1725710663947</created>
@@ -286,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728879589416</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix:specify pom package settings">
+      <created>1728880157084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728880157084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +341,7 @@
     <MESSAGE value="User Login and submit order" />
     <MESSAGE value="update order and project" />
     <MESSAGE value="fix:fix register logic and merge issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:fix register logic and merge issue" />
+    <MESSAGE value="fix:specify pom package settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:specify pom package settings" />
   </component>
 </project>

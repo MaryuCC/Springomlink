@@ -25,6 +25,14 @@ public class BearerTokenFilter extends OncePerRequestFilter {
     protected void doFilterInternal(@NotNull HttpServletRequest request,
                                     @NotNull HttpServletResponse response,
                                     @NotNull FilterChain filterChain) throws ServletException, IOException {
+        String requestURI = request.getRequestURI();
+
+        // 排除 /doc.html 不进行过滤
+        if ("/doc.html".equals(requestURI)) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         String tokenText = extractToken(request);
 
         if (tokenText != null) {
