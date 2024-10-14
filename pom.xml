@@ -110,7 +110,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.0.5</version>
+                <version>3.0.1</version>
+                <configuration>
+                    <mainClass>ManagerApplication</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
