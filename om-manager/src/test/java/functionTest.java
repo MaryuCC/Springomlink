@@ -43,6 +43,7 @@ public class functionTest {
         userRegisterDto.setUserName("w1015668942@gmail.com");
         userRegisterDto.setPassword("123456");
         userRegisterDto.setNickName("zhangsan");
+        userRegisterDto.setCode("975436");
         userInfoService.register(userRegisterDto);
     }
 

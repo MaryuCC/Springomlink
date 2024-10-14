@@ -9,6 +9,7 @@ public enum ResultCodeEnum {
     LOGIN_ERROR(201 , "username does not exist"),
     PWD_ERROR(2011,"wrong password"),
     VALIDATECODE_ERROR(202 , "wrong validate code") ,
+    VALIDATECODE_TIMEOUT(203 , "validate code timeout") ,
     LOGIN_AUTH(208 , "The user is not logged in."),
     USER_NAME_IS_EXISTS(209 , "The username already exists"),
     SYSTEM_ERROR(9999 , "There seems to be a network issue. Please try again later."),

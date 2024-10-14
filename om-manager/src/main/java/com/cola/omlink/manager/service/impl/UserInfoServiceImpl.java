@@ -61,10 +61,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public String login(UserLoginDto userLoginDto) {
         // 1. Dto获取用户名和密码
-        //String userName = userLoginDto.getUserName();
-        //TODO because DB no email, but frontend pass email, need change logic
-        String userName = userLoginDto.getEmail();
-
+        String userName = userLoginDto.getUserName();
         String password = userLoginDto.getPassword();
 
         // 2. 根据用户名查询数据库，得到用户信息
@@ -98,15 +95,14 @@ public class UserInfoServiceImpl implements UserInfoService {
         String password = userRegisterDto.getPassword();
         String nickName = userRegisterDto.getNickName();
         String code = userRegisterDto.getCode();
-        String email = userRegisterDto.getEmail().toLowerCase();
 
 
         // 2 验证码校验
-        if(!isValidate(email,code)){
+        if(!isValidate(userName,code)){
             throw new OmException(ResultCodeEnum.VALIDATECODE_ERROR);
         }
-        // 3 校验用户名不能重复
 
+        // 3 校验用户名不能重复
         User user = userMapper.selectByUsername(userName);
         if(user != null){ //存在相同用户名
             throw new OmException(ResultCodeEnum.USER_NAME_IS_EXISTS);
@@ -137,15 +133,18 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 
     //验证码校验
-    private boolean isValidate(String email, String code){
+    private boolean isValidate(String userName, String code){
         // 2，1 从redis获取发送验证码
-        String redisCode = redisTemplate.opsForValue().get(Email_Pre + email);
+        String redisCode = redisTemplate.opsForValue().get(Email_Pre + userName);
+        if(redisCode == null){
+            throw new  OmException(ResultCodeEnum.VALIDATECODE_TIMEOUT);
+        }
 
         // 2.2 获取输入的验证码，进行比对
-        if(!redisCode.equals(code)){
-            return false;
+        if(redisCode.equals(code)){
+            return true;
         }
-        return true;
+        return false;
     }
 
 }

@@ -34,9 +34,13 @@ public class OrderController {
         return Result.build(pageInfo, ResultCodeEnum.SUCCESS);
     }
 
+
+    // TODO finish missiondto and update service
     // 订单完成
     @PostMapping("auth/missionComplete")
-    public Result missionComplete(@PathVariable Long orderId){
+    public Result missionComplete(@PathVariable Long orderId
+                                  //,@RequestBody MissionDto missionDto
+                                    ){
         orderService.missionComplete(orderId);
         return Result.build(null, ResultCodeEnum.SUCCESS);
     }

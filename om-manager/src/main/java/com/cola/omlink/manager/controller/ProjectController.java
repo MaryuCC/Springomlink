@@ -4,6 +4,7 @@ package com.cola.omlink.manager.controller;
 import com.cola.omlink.manager.service.ProjectService;
 import com.cola.omlink.repository.dto.product.ProjectDto;
 import com.cola.omlink.repository.entity.product.Project;
+import com.cola.omlink.repository.entity.product.ProjectDetail;
 import com.cola.omlink.repository.vo.Project.ProjectVo;
 import com.cola.omlink.repository.vo.common.Result;
 import com.cola.omlink.repository.vo.common.ResultCodeEnum;
@@ -52,6 +53,12 @@ public class ProjectController {
         return Result.build(null,ResultCodeEnum.SUCCESS);
     }
 
+    // 查看项目详情
+    @GetMapping("auth/viewProject")
+    public Result viewProject(@PathVariable Integer projectId){
+        ProjectDetail projectDetail = projectService.viewProject(projectId);
+        return Result.build(projectDetail,ResultCodeEnum.SUCCESS);
+    }
 
 
 

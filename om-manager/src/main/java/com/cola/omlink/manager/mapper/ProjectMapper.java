@@ -23,4 +23,6 @@ public interface ProjectMapper {
     void updateDetail(Long projectId, String content);
 
     void delete(Long projectId);
+
+    ProjectDetail getDetail(Integer projectId);
 }

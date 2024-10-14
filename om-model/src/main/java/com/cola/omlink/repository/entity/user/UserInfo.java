@@ -11,14 +11,14 @@ import lombok.Data;
 public class UserInfo extends BaseEntity {
     @Schema(description = "user_id")
     private Long userId;
-    @Schema(description = "value")
-    private Integer value;
+    @Schema(description = "om_value")
+    private Integer om_Value;
     @Schema(description = "credit")
     private Integer credit;
     @Schema(description = "photo")
     private String photo;
     @Schema(description = "position")
-    private String position;
+    private String myPosition;
     @Schema(description = "university")
     private String university;
     @Schema(description = "profile")

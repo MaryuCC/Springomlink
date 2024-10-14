@@ -76,4 +76,11 @@ public class ProjectServiceImpl implements ProjectService {
         }
 
     }
+
+    // 项目详情
+    @Override
+    public ProjectDetail viewProject(Integer projectId) {
+        ProjectDetail projectDetail = projectMapper.getDetail(projectId);
+        return projectDetail;
+    }
 }

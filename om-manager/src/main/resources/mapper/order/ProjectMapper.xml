@@ -64,6 +64,12 @@
             where P.id=D.project_id and P.id=#{projectId}
     </update>
 
+    <select id="getDetail" resultType="com.cola.omlink.repository.entity.product.ProjectDetail">
+        select content
+            from o_project_detail
+                where project_id = #{projectId}
+                    and deleted = 0
+    </select>
 
 
 

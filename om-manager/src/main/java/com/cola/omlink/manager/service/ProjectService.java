@@ -2,6 +2,7 @@ package com.cola.omlink.manager.service;
 
 import com.cola.omlink.repository.dto.product.ProjectDto;
 import com.cola.omlink.repository.entity.product.Project;
+import com.cola.omlink.repository.entity.product.ProjectDetail;
 import com.cola.omlink.repository.vo.Project.ProjectVo;
 import com.github.pagehelper.PageInfo;
 
@@ -16,4 +17,7 @@ public interface ProjectService {
     void updateProject(ProjectVo projectVo, Long hostId);
 
     void deleteProject(ProjectVo projectVo);
+
+
+    ProjectDetail viewProject(Integer projectId);
 }

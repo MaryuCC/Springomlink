@@ -46,17 +46,15 @@ public class OrderServiceImpl implements OrderService {
         User user = AuthContextUtil.getUserInfo();
         Order order = new Order();
         order.setOrderNo(String.valueOf(System.currentTimeMillis()));
-        //order.setCustomerId(user.getId());
-        order.setCustomerId(5l);
-        //order.setCustomerName(user.getNickName());
-        order.setCustomerName("zhangsan");
+        order.setCustomerId(user.getId());
+        order.setCustomerName(user.getNickName());
         order.setStatus(0);
         order.setProjectId(project.getId());
-/*
+
         // 判断是否是自己发布的项目
         if(user.getId().equals(project.getHostId())){
             throw new OmException(ResultCodeEnum.ORDER_ERROR);
-        }*/
+        }
 
 
         // 设置金额
