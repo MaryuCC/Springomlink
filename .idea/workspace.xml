@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:specify pom package settings">
+    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:add pom plugin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/BearerTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/BearerTokenFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +259,7 @@
       <workItem from="1728711847417" duration="977000" />
       <workItem from="1728806362147" duration="597000" />
       <workItem from="1728876306218" duration="4462000" />
-      <workItem from="1728882902637" duration="1236000" />
+      <workItem from="1728882902637" duration="2515000" />
     </task>
     <task id="LOCAL-00001" summary="User Login and submit order">
       <created>1725710663947</created>
@@ -297,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728880157084</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix:add pom plugin">
+      <created>1728888564321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728888564321</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +348,7 @@
     <MESSAGE value="update order and project" />
     <MESSAGE value="fix:fix register logic and merge issue" />
     <MESSAGE value="fix:specify pom package settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:specify pom package settings" />
+    <MESSAGE value="fix:add pom plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:add pom plugin" />
   </component>
 </project>
