@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="update order and project">
-      <change afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/user/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/mapper/ProjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/order/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/resources/mapper/order/ProjectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-manager/src/test/java/functionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/test/java/functionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/h5/UserRegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/h5/UserRegisterDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/common/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/vo/common/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:fix register logic and merge issue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +64,7 @@
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "com.google.cloudcode.ide_session_index": "20241014_0000",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/spproject/omlink/om-common/common-service/src/main/java/com/cola/omlink/common/exception",
+    "last_opened_file_path": "C:/Users/Yohane/.ssh/id_rsa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,7 +73,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "vcs.Subversion.SSH",
     "spring.configuration.checksum": "4bdcc81704d119ff6f8d572300dff6de",
     "vue.rearranger.settings.migration": "true"
   }
@@ -222,6 +203,12 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Yohane\AppData\Roaming\Subversion</configuration>
+    <option name="sshConnectionType" value="PRIVATE_KEY" />
+    <option name="sshUserName" value="MaryuCC" />
+    <option name="sshPrivateKeyPath" value="C:\Users\Yohane\.ssh\id_rsa" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="" />
@@ -269,7 +256,7 @@
       <workItem from="1728462302227" duration="3732000" />
       <workItem from="1728711847417" duration="977000" />
       <workItem from="1728806362147" duration="597000" />
-      <workItem from="1728876306218" duration="3118000" />
+      <workItem from="1728876306218" duration="3562000" />
     </task>
     <task id="LOCAL-00001" summary="User Login and submit order">
       <created>1725710663947</created>
@@ -292,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726552522145</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix:fix register logic and merge issue">
+      <created>1728879589416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728879589416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +329,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="User Login and submit order" />
     <MESSAGE value="update order and project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update order and project" />
+    <MESSAGE value="fix:fix register logic and merge issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:fix register logic and merge issue" />
   </component>
 </project>
