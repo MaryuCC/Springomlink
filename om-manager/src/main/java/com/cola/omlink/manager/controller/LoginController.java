@@ -7,6 +7,7 @@ import com.cola.omlink.repository.dto.h5.UserLoginDto;
 import com.cola.omlink.repository.dto.h5.UserRegisterDto;
 import com.cola.omlink.repository.vo.common.Result;
 import com.cola.omlink.repository.vo.common.ResultCodeEnum;
+import com.cola.omlink.utils.AuthContextUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -51,9 +52,16 @@ public class LoginController {
 
 
     // Get user info based on token
+    @GetMapping("/getUserInfo")
+    public Result getUserInfo(){
+        return Result.build(AuthContextUtil.getUserInfo(),ResultCodeEnum.SUCCESS);
+    }
 
-
-
+//    // Log out
+//    @PostMapping("/logout")
+//    public Result logout(String token){
+//
+//    }
 
 
 }

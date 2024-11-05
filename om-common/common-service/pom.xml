@@ -48,7 +48,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!-- spzx-model module -->
+        <!-- om-model module -->
         <dependency>
             <groupId>com.cola</groupId>
             <artifactId>om-model</artifactId>

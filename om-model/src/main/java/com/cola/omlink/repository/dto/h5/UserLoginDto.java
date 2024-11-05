@@ -9,7 +9,6 @@ public class UserLoginDto {
 
     private String userName;
 
-    private String email;
 
     private String password;
 

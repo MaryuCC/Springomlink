@@ -16,10 +16,12 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 @EnableMethodSecurity
 public class SecurityConfig {
     private final BearerTokenFilter bearerTokenFilter;
+    private final AuthProperties authProperties;
 
     @Autowired
-    public SecurityConfig(BearerTokenFilter bearerTokenFilter) {
+    public SecurityConfig(BearerTokenFilter bearerTokenFilter, AuthProperties authProperties) {
         this.bearerTokenFilter = bearerTokenFilter;
+        this.authProperties = authProperties;
     }
 
     @Bean
@@ -27,15 +29,22 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable)  // Disable CSRF protection
             .cors(AbstractHttpConfigurer::disable)
             .addFilterBefore(new BearerTokenFilter(storedApiToken), BasicAuthenticationFilter.class)
-            .authorizeHttpRequests(authorizeRequests ->
-                authorizeRequests
-                    .requestMatchers("/api/order/**").authenticated()
-                    .requestMatchers("/api/dashboard/**").authenticated()
-                    .requestMatchers("/api/project/**").authenticated()
-                    .requestMatchers("/api/user/userInfo/**").authenticated()
-                    .requestMatchers("/api/**").permitAll()
-                    .anyRequest().authenticated()
-            );
+                .authorizeHttpRequests(authorizeRequests -> {
+                    // 允许所有在 noAuthUrls 中配置的路径
+                    if (authProperties.getNoAuthUrls() != null) {
+                        for (String url : authProperties.getNoAuthUrls()) {
+                            authorizeRequests.requestMatchers(url).permitAll();
+                        }
+                    }
+                    // 其他授权规则
+                    authorizeRequests
+                            .requestMatchers("/api/order/**").authenticated()
+                            .requestMatchers("/api/dashboard/**").authenticated()
+                            .requestMatchers("/api/project/**").authenticated()
+                            .requestMatchers("/api/user/userInfo/**").authenticated()
+                            .requestMatchers("/api/**").permitAll()
+                            .anyRequest().authenticated();
+                });
 
         return http.build();
     }

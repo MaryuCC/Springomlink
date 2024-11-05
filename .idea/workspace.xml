@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:fix pom syntax">
+    <list default="true" id="fd93c1ba-ced5-4015-8b71-0e95c07b4e1e" name="Changes" comment="fix:fix pom version">
+      <change afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/AuthProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-common/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/om-common/common-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/auth/StoredApiToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/config/auth/StoredApiToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-manager/src/main/java/com/cola/omlink/manager/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/h5/UserLoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/dto/h5/UserLoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/om-model/src/main/java/com/cola/omlink/repository/entity/user/UserInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +35,31 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="authentication" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MaryuCC&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MaryuCC/Springomlink.git&quot;,
+    &quot;accountId&quot;: &quot;ef71801e-7c1d-4fa6-91c2-d25f80542c89&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2l2rPNwOCaJ1pkFODqLG8o7vZVd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,41 +68,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ACTIVE_CLOUD_PROJECT_ACCOUNT&quot;: &quot;teamdatacola@gmail.com&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_ID&quot;: &quot;omlink-436204&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_NAME&quot;: &quot;omlink&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_NUMBER&quot;: &quot;1067344842079&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20241014_0002&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yohane/.ssh/id_rsa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion.SSH&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4bdcc81704d119ff6f8d572300dff6de&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "teamdatacola@gmail.com",
+    "ACTIVE_CLOUD_PROJECT_ID": "omlink-436204",
+    "ACTIVE_CLOUD_PROJECT_NAME": "omlink",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "1067344842079",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ManagerApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "com.google.cloudcode.ide_session_index": "20241017_0000",
+    "git-widget-placeholder": "map-app",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Yohane/.ssh/id_rsa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Subversion.SSH",
+    "spring.configuration.checksum": "4bdcc81704d119ff6f8d572300dff6de",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -188,10 +213,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cloud Code: Cloud Run.Deploy" />
-      <item itemvalue="JUnit.functionTest.testRegister" />
       <item itemvalue="JUnit.functionTest.testLogin" />
       <item itemvalue="JUnit.functionTest.testOrder" />
+      <item itemvalue="JUnit.functionTest.testRegister" />
       <item itemvalue="JUnit.functionTest.testSendCode" />
       <item itemvalue="Spring Boot.ManagerApplication" />
     </list>
@@ -204,6 +228,14 @@
         <item itemvalue="JUnit.functionTest.testLogin" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -261,6 +293,17 @@
       <workItem from="1728806362147" duration="597000" />
       <workItem from="1728876306218" duration="4462000" />
       <workItem from="1728882902637" duration="4147000" />
+      <workItem from="1728898127671" duration="836000" />
+      <workItem from="1728987901163" duration="30000" />
+      <workItem from="1729052319921" duration="8625000" />
+      <workItem from="1729144626437" duration="2274000" />
+      <workItem from="1729150192559" duration="2515000" />
+      <workItem from="1729225512729" duration="4298000" />
+      <workItem from="1729740297645" duration="298000" />
+      <workItem from="1730506943432" duration="284000" />
+      <workItem from="1730692793068" duration="608000" />
+      <workItem from="1730696717807" duration="948000" />
+      <workItem from="1730780835527" duration="4851000" />
     </task>
     <task id="LOCAL-00001" summary="User Login and submit order">
       <created>1725710663947</created>
@@ -311,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728891129504</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix:fix pom version">
+      <created>1728898270718</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728898270718</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +374,7 @@
         <option value="Default.Author" />
         <option value="Default.Date" />
         <option value="Default.Subject" />
-        <option value="Space.CommitStatus" />
+        <option value="GitHub.CommitStatus" />
       </list>
     </option>
   </component>
@@ -358,6 +408,7 @@
     <MESSAGE value="fix:specify pom package settings" />
     <MESSAGE value="fix:add pom plugin" />
     <MESSAGE value="fix:fix pom syntax" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:fix pom syntax" />
+    <MESSAGE value="fix:fix pom version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:fix pom version" />
   </component>
 </project>

@@ -10,6 +10,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
 
+import static com.cola.omlink.manager.constant.RedisConstant.Login_Token_Pre;
+
 @Service
 public class StoredApiToken {
     @Autowired
@@ -19,7 +21,7 @@ public class StoredApiToken {
 
     public UsernamePasswordAuthenticationToken verifyToken(String token) {
         try {
-            String userJson = redisTemplate.opsForValue().get("user:login" + token);
+            String userJson = redisTemplate.opsForValue().get(Login_Token_Pre + token);
             User user = JSON.parseObject(userJson, User.class);
             String name = user.getUserName();
 

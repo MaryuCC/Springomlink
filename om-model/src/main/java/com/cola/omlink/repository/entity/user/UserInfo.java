@@ -11,6 +11,10 @@ import lombok.Data;
 public class UserInfo extends BaseEntity {
     @Schema(description = "user_id")
     private Long userId;
+    @Schema(description = "gender")
+    private Integer gender;
+    @Schema(description = "pronoun")
+    private Integer pronoun;
     @Schema(description = "om_value")
     private Integer om_Value;
     @Schema(description = "credit")
